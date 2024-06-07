@@ -9,3 +9,5 @@ class Input
 public:
     UserInput Read();
 };
+
+extern UserInput userInput;

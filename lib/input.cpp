@@ -16,3 +16,5 @@ UserInput Input::Read()
         default: return UserInput::None;
     }
 }
+
+UserInput userInput{};

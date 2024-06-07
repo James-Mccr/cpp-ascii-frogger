@@ -7,7 +7,6 @@
 
 using namespace std;
 
-static UserInput userInput{};
 static constexpr int FPS{60};
 
 class Car
