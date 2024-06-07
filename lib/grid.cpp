@@ -26,3 +26,5 @@ bool Grid::IsCollision(int x, int y, char c)
 
 int Grid::GetWidth() const { return width; }
 int Grid::GetHeight() const { return height; }
+
+Grid grid{0,0};

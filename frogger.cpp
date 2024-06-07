@@ -7,7 +7,6 @@
 
 using namespace std;
 
-static Grid grid{0,0};
 static UserInput userInput{};
 static constexpr int FPS{60};
 
@@ -215,7 +214,6 @@ int main()
 {
     srand(time(NULL));
     Console console{};
-    grid = {console.width, console.height};
     Input input{};
     Frame frame{FPS};
     Render render{console};

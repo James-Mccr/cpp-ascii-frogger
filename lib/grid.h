@@ -1,3 +1,5 @@
+#pragma once
+
 #include <string>
 #include <vector>
 
@@ -25,3 +27,5 @@ private:
     int height{};
     vector<string> tiles;
 };
+
+extern Grid grid;

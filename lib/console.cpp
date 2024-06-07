@@ -1,10 +1,11 @@
 #include "console.h"
+#include "grid.h"
 #include <curses.h>
 #include <ncurses.h>
 #include <sys/ioctl.h>
 #include <unistd.h>
 
-Console::Console() 
+Console::Console()
 {
     initscr();
     cbreak();
@@ -17,6 +18,7 @@ Console::Console()
     ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);
     width = w.ws_col;
     height = w.ws_row;
+    grid = {width, height};
 }
 
 Console::~Console()
